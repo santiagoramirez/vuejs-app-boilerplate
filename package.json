@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "webpack --mode 'development' --watch",
+    "dev": "webpack --mode 'development' --watch --devtool 'inline-source-map'",
     "build": "webpack --mode 'production' --watch"
   },
   "babel": {

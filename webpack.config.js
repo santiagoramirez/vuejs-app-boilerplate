@@ -51,8 +51,7 @@ const config = {
     plugins: [
       new DirectoryNamedWebpackPlugin(true)
     ]
-  },
-  devtool: 'inline-source-map'
+  }
 };
 
 module.exports = config;
