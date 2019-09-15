@@ -1,2 +1,0 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["polyfill"],[],[["./node_modules/babel-polyfill/lib/index.js","runtime","vendors"]]]);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJkaXN0L3NjcmlwdHMvcG9seWZpbGwuY2h1bmsuNmJjOWVhZmY5MzliMWM0YWNkYTcuanMiLCJzb3VyY2VSb290IjoiIn0=
