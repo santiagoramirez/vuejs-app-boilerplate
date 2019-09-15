@@ -1,0 +1,8 @@
+{
+  "app.css": "dist/styles/app.css",
+  "app.js": "dist/scripts/app.chunk.ae070250656b99fba27b.js",
+  "polyfill.js": "dist/scripts/polyfill.chunk.6bc9eaff939b1c4acda7.js",
+  "runtime.js": "dist/scripts/runtime.bundle.a9743c973b27d13282f6.js",
+  "vendors.js": "dist/scripts/vendors.chunk.e30f0916eb3b9d5ab5df.js",
+  "index.html": "index.html"
+}

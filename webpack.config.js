@@ -2,6 +2,9 @@ const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanObsoleteChunks = require('webpack-clean-obsolete-chunks');
 
 const config = {
   entry: {
@@ -10,8 +13,20 @@ const config = {
   },
   output: {
     path: __dirname,
-    filename: 'dist/scripts/[name].bundle.js',
-    chunkFilename: 'dist/scripts/[name].chunk.js'
+    filename: 'dist/scripts/[name].bundle.[contenthash].js',
+    chunkFilename: 'dist/scripts/[name].chunk.[contenthash].js'
+  },
+  optimization: {
+    runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
+        }
+      }
+    }
   },
   module: {
     rules: [{
@@ -35,10 +50,16 @@ const config = {
     }]
   },
   plugins: [
+    new ManifestPlugin(),
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
       filename: 'dist/styles/[name].css'
-    })
+    }),
+    new HtmlWebpackPlugin({
+      title: 'VueJS App',
+      template: 'index.ejs'
+    }),
+    new CleanObsoleteChunks()
   ],
   resolve: {
     alias: {
