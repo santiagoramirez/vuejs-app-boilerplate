@@ -53,7 +53,7 @@ const config = {
     new ManifestPlugin(),
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'dist/styles/[name].css'
+      filename: 'dist/styles/[name].[contenthash].css'
     }),
     new HtmlWebpackPlugin({
       title: 'VueJS App',

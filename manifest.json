@@ -1,8 +1,8 @@
 {
-  "app.css": "dist/styles/app.css",
-  "app.js": "dist/scripts/app.chunk.ae070250656b99fba27b.js",
+  "app.css": "dist/styles/app.30e4ea23d2adb992ff77.css",
+  "app.js": "dist/scripts/app.chunk.354e1e0b2f3b23d9c7ad.js",
   "polyfill.js": "dist/scripts/polyfill.chunk.6bc9eaff939b1c4acda7.js",
-  "runtime.js": "dist/scripts/runtime.bundle.a9743c973b27d13282f6.js",
+  "runtime.js": "dist/scripts/runtime.bundle.2294c06ae45245d53b0c.js",
   "vendors.js": "dist/scripts/vendors.chunk.e30f0916eb3b9d5ab5df.js",
   "index.html": "index.html"
 }
